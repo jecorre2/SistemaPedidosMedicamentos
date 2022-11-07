@@ -196,9 +196,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_CofarmaActionPerformed
 
     private void ConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConfirmarActionPerformed
+        
         VentanaConfirmacion abrir = new VentanaConfirmacion();
         abrir.setVisible(true);
         this.setVisible(false);
+        
         if(TipoMedicamento.getSelectedItem() == "Seleccione el tipo de medicamento"){
             
             JOptionPane.showMessageDialog(null, "Debe seleccionar un tipo de medicamento");
